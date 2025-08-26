@@ -14,7 +14,8 @@ describe('Inline Button Component', () => {
   it('calls onClick when clicked', () => {
     const handleClick = cy.stub();
     mount(<Button label="Click Me" onClick={handleClick} />);
-    cy.get('button').click().then(() => {
+    cy.get('button').click()
+    cy.get('button').then(() => {
       expect(handleClick).to.have.been.calledOnce;
     });
   });
