@@ -5,7 +5,7 @@ module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     reportDir: 'reports',
-    overwrite: false,
+    overwrite: true,
     html: true,
     json: true,
     embeddedScreenshots: true,
@@ -13,7 +13,7 @@ module.exports = defineConfig({
 
   e2e: {
     setupNodeEvents(on, config) {
-      mochawesome(on);
+      require('cypress-mochawesome-reporter/plugin')(on);
       return config;
     },
     screenshotsFolder: 'reports/screenshots',
