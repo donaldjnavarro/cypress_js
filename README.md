@@ -10,7 +10,7 @@ Example Cypress framework
 - **Test automation**: Cypress
 - **Linter**: ESLint
 - **Assertions**: Chai (default)
-- **Test reports**: Mocha (default)
+- **Test reports**: Mochawesome
 
 ## Usage
 
@@ -55,3 +55,13 @@ npx cypress run --e2e
 ### XPath
 
 We use a Cypress package to support xpath references to elements. XPath is a more reliable and transparent approach than using the default CSS selectors.
+
+### Page Object Models
+
+In `cypress/pages` are page models which standardize automation for particular functionality and store a dictionary of xpath locators for a given page.
+
+### Test results
+
+**HTML**: Test results are generated in HTML in the `reports/` folder.
+
+**Screenshots**: Screenshots from any failures are automatically included in the HTML report.
