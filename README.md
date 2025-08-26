@@ -9,6 +9,8 @@ Example Cypress framework
 - **Package Manager**: NPM
 - **Test automation**: Cypress
 - **Linter**: ESLint
+- **Assertions**: Chai (default)
+- **Test reports**: Mocha (default)
 
 ## Usage
 
@@ -48,3 +50,8 @@ Run e2e tests (and not component tests)
 npx cypress run --e2e
 ```
 
+## Cypress approach
+
+### XPath
+
+We use a Cypress package to support xpath references to elements. XPath is a more reliable and transparent approach than using the default CSS selectors.

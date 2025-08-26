@@ -6,6 +6,7 @@ import pluginCypress from "eslint-plugin-cypress";
 
 export default defineConfig([
   {
+    ignores: ["reports/**"],
     files: ["**/*.{js,jsx}"],
     languageOptions: {
       globals: {
