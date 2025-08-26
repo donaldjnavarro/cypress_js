@@ -11,6 +11,6 @@ const todoPage = new TodoPage();
   it('displays two todo items by default', () => {
     todoPage.todoList().should('have.length', 2)
     todoPage.todoList().first().should('have.text', 'Pay electric bill')
-    todoPage.todoList().last().should('have.text', 'Walk the doga')
+    todoPage.todoList().last().should('have.text', 'Walk the dog')
   })
 })
