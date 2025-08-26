@@ -1,0 +1,20 @@
+{
+  "name": "cypress_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/react": "^9.0.1",
+    "@vitejs/plugin-react": "^5.0.1",
+    "cypress": "^15.0.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "vite": "^7.1.3"
+  }
+}
