@@ -1,0 +1,14 @@
+name: Pull Request Checks
+
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  lint:
+    uses: ./.github/workflows/lint-job.yml
+
+  cypress:
+    uses: ./.github/workflows/cypress-job.yml

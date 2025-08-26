@@ -4,9 +4,11 @@ Example Cypress framework
 
 ## Tech Stack
 
-- Language: Javascript
-- Compiler: NodeJS
-- Package Manager: NPM
+- **Language**: Javascript
+- **Runtime**: NodeJS
+- **Package Manager**: NPM
+- **Test automation**: Cypress
+- **Linter**: ESLint
 
 ## Usage
 

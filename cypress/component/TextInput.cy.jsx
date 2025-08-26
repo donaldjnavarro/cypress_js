@@ -13,6 +13,7 @@ describe('Inline TextInput', () => {
     }
 
     mount(<Wrapper />);
-    cy.get('input').type('Hello').should('have.value', 'Hello');
+    cy.get('input').type('Hello');
+    cy.get('input').should('have.value', 'Hello');
   });
 });
